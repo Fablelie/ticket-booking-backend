@@ -1,0 +1,21 @@
+version: "2"
+sql:
+  - engine: "postgresql"
+    queries: "services/order-service/db/queries/"
+    schema: "services/order-service/db/migrations/"
+    gen:
+      go:
+        package: "db"
+        out: "services/order-service/db/generated"
+        sql_package: "pgx/v5"
+        emit_json_tags: true
+
+  - engine: "postgresql"
+    queries: "services/inventory-service/db/queries/"
+    schema: "services/inventory-service/db/migrations/"
+    gen:
+      go:
+        package: "db"
+        out: "services/inventory-service/db/generated"
+        sql_package: "pgx/v5"
+        emit_json_tags: true
