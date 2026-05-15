@@ -1,4 +1,5 @@
-# 🎟️ High-Frequency Ticket Booking System (Microservices)
+# 🎟️ High-Frequency Ticket Booking System (Microservices) 
+# Right now, I only have the project structure and tech stack ready. The rest is waiting until I learn more about Kafka
 
 A high-frequency concert ticket booking platform simulation built with Go. This project is specifically designed to handle extreme traffic spikes (High Concurrency) while ensuring ultra-low latency (Performance), elastic scalability (Scalability), and flawless data consistency during stock deduction (Data Integrity / ACID Transactions).
 
